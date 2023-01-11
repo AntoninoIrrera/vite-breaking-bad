@@ -15,7 +15,7 @@ export default{
   },
   methods:{
     getCardFromAPI(){
-      axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=12&offset=0')
+      axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0')
         .then((response) => {
           console.log(response.data.data);
 
@@ -44,13 +44,14 @@ export default{
     display: flex;
     flex-wrap: wrap;
 
-    padding: 5rem;
+    padding: 3rem;
 
   }
 
   .singleCard{
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 5);
 
+    margin-bottom: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@ export default{
   }
 
   h2{
-    margin-top: 2rem;
     text-align: center;
+    margin-bottom: 0;
   }
 </style>

@@ -18,16 +18,17 @@ export default {
 <template>
 
     <img :src="imgCard" :alt="nameCard">
-    <h3>{{ nameCard }}</h3>
-    <h3>{{ typeCard }}</h3>
-
-
+    <h3>Name: {{ nameCard }}</h3>
+    <h3>Type: {{ typeCard }}</h3>
 
 </template>
 
 <style scoped>
     img{
-        width: 50%;
+        width: 60%;
+    }
+    h3{
+        margin: 0;
     }
 
    
