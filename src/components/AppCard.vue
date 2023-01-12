@@ -11,6 +11,7 @@ export default {
        nameCard: String,
        typeCard: String,
        imgCard: null,
+       archTypeCard: String,
    }
 }
 </script>
@@ -20,6 +21,7 @@ export default {
     <img :src="imgCard" :alt="nameCard">
     <h3>Name: {{ nameCard }}</h3>
     <h3>Type: {{ typeCard }}</h3>
+    <h3>ArchType: {{ archTypeCard }}</h3>
 
 </template>
 
